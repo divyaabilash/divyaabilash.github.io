@@ -3,75 +3,157 @@
     background-color: #D8D8D8;
 }
 
-
-/*.banner{
-	/*background-color: #303030;
-	border-style: 1px solid white;
-	box-shadow: 10px #888888;
-	/*background-origin: content-box; 
-	/*border-width: 100px;
-}*/
-
-.profilePic {
-	
-    float: left;
-    width: 30%;
-
-/*    -webkit-transition:width 2s;
-   transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
-   	-webkit-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
-    /*transition-duration:10s;*/
-}
-.profilePic img {
-	border-radius: 125px;
-	transition: all 2s ease-in-out 15s;
-	-moz-transition: all 2s ease-in-out;
-	-webkit-transition:all 2s ease-in-out;
-	cursor:pointer;
-}
-.profilePic img:hover{
-	width: 200px;
-	height: 200px;
-	/*transform:rotate(360deg);	*/
-}
-
 div::after {
     display: block;
     content: " ";
     clear: both;
 }
 
-.wrapperForBanner {
+header {
+    text-align: center;
+    padding: 25px 0;
+    color: #ddd;
+    background: #3d3d3d;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3d3d3d), color-stop(100%, #000000));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, #3d3d3d 0%, #000000 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+header h1 {
+    color: #CCCCCC;
+    font-style: italic;
+    font-family: "Edwardian Script ITC";
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.descrition{
+    font-family: "chalkboard";
+    color:white;
+    list-style: none;
+}
+
+.descrition li::after{
+    display: block;
+    content:"...";
+    clear:both;
+    color:  #585858 ;   
+}
+ 
+.contacts li{
+    display: inline-block;;
+    list-style: none;
+}
+
+a{
+    color: white;
+}
+
+.contacts li{
+        background:     #707070 ;
+     /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #000000 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #585858), color-stop(100%, #000000));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #585858 0%, #000000 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #585858 0%, #000000 100%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #585858 0%, #000000 100%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, #585858 0%, #000000 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    border-radius: 75px;
+    margin: 20px;
+    background-origin: content-box;
+}
+
+
+
+.marginDiv {
+    margin: 20px;
+}
+
+ div .objective{
+    padding:100px;
+    background: #6699CC;
+  }
+/*.wrapperForBanner {
     background-clip: content-box;
     border: 10px solid white;
     background: #303030;
-    /* For browsers that do not support gradients */
+    /* For browsers that do not support gradients 
     background: -webkit-linear-gradient(left, #707070, black);
-    /* For Safari 5.1 to 6.0 */
+    /* For Safari 5.1 to 6.0 
     background: -o-linear-gradient(right, #707070, black);
-    /* For Opera 11.1 to 12.0 */
+    /* For Opera 11.1 to 12.0 
     background: -moz-linear-gradient(right, #707070, black);
-    /* For Firefox 3.6 to 15 */
+    /* For Firefox 3.6 to 15 
     background: linear-gradient(to right, #707070, black);
-    /* Standard syntax */
+    /* Standard syntax 
     overflow: visible;
     clear: both;
     height: auto;
-}
+}*/
 
-.profileName {
-	height: 106px;
+/*.profileName {
+    /*height: 106px;
     float: right;
     width: 70%;
     color: white;
     font-style: italic;
     font-family: "Edwardian Script ITC";
-    /*font-family: "kokonor";*/
-    font-size: 70px;
-    top:50%;
-}
+    /*font-family: "kokonor";
+    font-size: 50px;
+    /*top:50%;
+}*/
 
-.marginDiv{
-	margin:20px;
+
+/*.banner{
+    /*background-color: #303030;
+    border-style: 1px solid white;
+    box-shadow: 10px #888888;
+    /*background-origin: content-box; 
+    /*border-width: 100px;
+}*/
+
+
+/*.profilePic {
+    
+    float: left;
+    width: 30%;
+
+/*    -webkit-transition:width 2s;
+   transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    /*transition-duration:10s;*
 }
+.profilePic img {
+    border-radius: 125px;
+    transition: all 2s ease-in-out 15s;
+    -moz-transition: all 2s ease-in-out;
+    -webkit-transition:all 2s ease-in-out;
+    cursor:pointer;
+    /*transform: rotate3d(x,y,z,90deg);
+}
+.profilePic img:hover{
+    width: 150px;
+    height: 150px;
+    /*transform:rotate(360deg); 
+}*/
