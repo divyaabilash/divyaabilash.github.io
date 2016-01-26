@@ -8,18 +8,15 @@
 display: block;
 margin: 0 auto;
 list-style: none;
-padding: 0;
-width: 25%;
-background:Black;
 
 }
 
-.navigation li{
+/*.navigation li{
   margin-top: 9px;
 float: left;
 padding-left: 21px;
 }
-
+*/
 
 div::after {
     display: block;
@@ -28,6 +25,7 @@ div::after {
 }
 
 header {
+
     text-align: center;
     padding: 25px 0;
     color: #ddd;
@@ -47,6 +45,7 @@ header {
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#000000', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
+    /*background-attachment: fixed;*/
 }
 
 header h1 {
@@ -107,6 +106,7 @@ a{
     border-radius: 75px;
     margin: 20px;
     background-origin: content-box;
+    /*background-attachment: fixed;*/
 }
 
 
@@ -136,21 +136,24 @@ a{
 
   .technical{
     font-family: "chalkboard";
-    color: white;
-    background-color: #336699;
-      /* Old browsers */
+    color: Black;
+    background:url("images/tech.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px 600px;
+/*    background-color: #336699;
+      /* Old browsers 
     background: -moz-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
-    /* FF3.6+ */
+    /* FF3.6+
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #336699), color-stop(100%, black));
-    /* Chrome,Safari4+ */
+    /* Chrome,Safari4+ 
     background: -webkit-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
-    /* Chrome10+,Safari5.1+ */
+    /* Chrome10+,Safari5.1+ 
     background: -o-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
-    /* Opera 12+ */
+    /* Opera 12+ 
     background: -ms-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
-    /* IE10+ */
+    /* IE10+ 
     background: radial-gradient(ellipse at center, #336699 0%, black 100%);
-    /* W3C */
+    /* W3C 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#336699', endColorstr='black', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
     /*border-radius: 75px;*/
@@ -173,17 +176,26 @@ div .technical li{
 .experience{
       font-family: "chalkboard";
     color: black;
-   background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #CC9933,#660000 ); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #CC9933,#660000); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #CC9933,#660000); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #CC9933,#660000 ); /* Standard syntax */
-    /* IE6-9 fallback on horizontal gradient */
+    background:url("images/experience.jpg");
+    background-size: 1200px 1200px;
+    background-repeat: no-repeat;
+   background: red; 
+   /*For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #CC9933,#660000 ); 
+   /*For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #CC9933,#660000); 
+   /*For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #CC9933,#660000);
+    /*For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #CC9933,#660000 ); 
+   /*Standard syntax */
+     /*IE6-9 fallback on horizontal gradient */
     /*border-radius: 75px;*/
         margin: 120px 0px;
-    background-origin: content-box;
-    padding:20px 0px;
-    font-size: 32px;
+    /*background-origin: content-box;*/
+    padding:20px 25px;
+    font-size: 25px;
+    background-repeat: no-repeat;
  
 }
 .employement{
@@ -191,22 +203,22 @@ div .technical li{
     font-family: "chalkboard";
    /* background:url("images/workdesk.jpg");
     background-repeat: no-repeat;
-   background-origin: content-box;
-   */
+   background-origin: content-box;*/
+   
         background:#00CCCC;
     background: -webkit-linear-gradient(left top,#00CCCC , #3366CC );
         background: -o-linear-gradient(right bottom,#00CCCC , #3366CC );
             background: -moz-linear-gradient(right bottom,#00CCCC , #3366CC );
                 background: linear-gradient(right bottom,#00CCCC , #3366CC );
-    /*color: DarkCyan  ;*/
+ color: DarkCyan  
     color:White;
     z-index: -2;
-    /*opacity: 0.5;*/
+    /*opacity: 0.5;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 50px 0px;
+    /*margin: 50px 0px;*/
 }
 div .employement h1{
     font-family: "Chalkduster";
@@ -230,10 +242,19 @@ div .image div img{
 }
 
 .education{
+    margin-top: 10%;
     color: White;
+    padding:20%;
     background:#006666;
+    background:url("images/education.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
 
+}
+.education h1{
+    font-size: 40px;
+    font-family: "chalkboard";
 }
 
 .cimage{
@@ -257,7 +278,11 @@ font-size: 30px;
 
 
 .project{
-    color:White;
+    margin-top:10%;
+    color:Black;
     font-size:30px;
+    background:url("images/project.jpg");
+    background-size: 100% 100%;
+    padding: 80px;
 }
 
