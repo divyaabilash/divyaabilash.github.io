@@ -136,28 +136,28 @@ a{
 
   .technical{
     font-family: "chalkboard";
-    color: Black;
-    background:url("images/tech.jpg");
-    background-repeat: no-repeat;
+    color: White;
+    /*background:url("images/tech.jpg");*/
+    /*background-repeat: no-repeat;*/
     background-size: 1200px 600px;
-/*    background-color: #336699;
-      /* Old browsers 
+    background-color: #336699;
+       /*Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
-    /* FF3.6+
+     /*FF3.6+*/
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #336699), color-stop(100%, black));
-    /* Chrome,Safari4+ 
+     /*Chrome,Safari4+ */
     background: -webkit-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
-    /* Chrome10+,Safari5.1+ 
+     /*Chrome10+,Safari5.1+ */
     background: -o-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
-    /* Opera 12+ 
+     /*Opera 12+ */
     background: -ms-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
-    /* IE10+ 
+     /*IE10+ */
     background: radial-gradient(ellipse at center, #336699 0%, black 100%);
-    /* W3C 
+     /*W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#336699', endColorstr='black', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+     /*IE6-9 fallback on horizontal gradient */
     /*border-radius: 75px;*/
-        margin: 120px 0px;
+      margin: 120px 0px;
     background-origin: content-box;
     padding:20px 0px;
 
@@ -171,27 +171,29 @@ div .technical li{
     list-style-type: square;
     margin:25px;
     font-size: 32px;
+    font-weight: bold;
+    z-index:-1;
 }
 
 .experience{
       font-family: "chalkboard";
     color: black;
     background:url("images/experience.jpg");
-    background-size: 1200px 1200px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-   background: red; 
+   /*background: red; */
    /*For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #CC9933,#660000 ); 
    /*For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #CC9933,#660000); 
    /*For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #CC9933,#660000);
-    /*For Firefox 3.6 to 15 */
+    /*/*For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #CC9933,#660000 ); 
-   /*Standard syntax */
-     /*IE6-9 fallback on horizontal gradient */
-    /*border-radius: 75px;*/
-        margin: 120px 0px;
+   /**Standard syntax */
+     /*IE6-9 fallback on horizontal gradient 
+    /*border-radius: 75px;
+        /*margin: 120px 0px;*/
     /*background-origin: content-box;*/
     padding:20px 25px;
     font-size: 25px;
@@ -201,9 +203,9 @@ div .technical li{
 .employement{
     font-size: 32px;
     font-family: "chalkboard";
-   /* background:url("images/workdesk.jpg");
+    background:url("images/workdesk.jpg");
     background-repeat: no-repeat;
-   background-origin: content-box;*/
+   background-origin: content-box;
    
         background:#00CCCC;
     background: -webkit-linear-gradient(left top,#00CCCC , #3366CC );
@@ -218,7 +220,7 @@ div .technical li{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*margin: 50px 0px;*/
+    margin: 50px 0px;*/
 }
 div .employement h1{
     font-family: "Chalkduster";
