@@ -3,6 +3,24 @@
     background-color: black;
 }
 
+.navigation{
+    list-style: none;
+display: block;
+margin: 0 auto;
+list-style: none;
+padding: 0;
+width: 25%;
+background:Black;
+
+}
+
+.navigation li{
+  margin-top: 9px;
+float: left;
+padding-left: 21px;
+}
+
+
 div::after {
     display: block;
     content: " ";
@@ -43,6 +61,8 @@ header h1 {
     font-family: "chalkboard";
     color:white;
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .descrition li::after{
@@ -52,10 +72,15 @@ header h1 {
     color:  #585858 ;   
 }
 
- 
+ .contacts{
+            padding: 0px;
+    margin: 0px;
+ }
+
 .contacts li{
     display: inline-block;;
     list-style: none;
+
 }
 
 a{
@@ -88,6 +113,7 @@ a{
 
 .marginDiv {
     margin: 20px;
+    text-decoration: none;
 }
 
  div .objective{
@@ -235,69 +261,3 @@ font-size: 30px;
     font-size:30px;
 }
 
-
-
-/*.wrapperForBanner {
-    background-clip: content-box;
-    border: 10px solid white;
-    background: #303030;
-    /* For browsers that do not support gradients 
-    background: -webkit-linear-gradient(left, #707070, black);
-    /* For Safari 5.1 to 6.0 
-    background: -o-linear-gradient(right, #707070, black);
-    /* For Opera 11.1 to 12.0 
-    background: -moz-linear-gradient(right, #707070, black);
-    /* For Firefox 3.6 to 15 
-    background: linear-gradient(to right, #707070, black);
-    /* Standard syntax 
-    overflow: visible;
-    clear: both;
-    height: auto;
-}*/
-
-/*.profileName {
-    /*height: 106px;
-    float: right;
-    width: 70%;
-    color: white;
-    font-style: italic;
-    font-family: "Edwardian Script ITC";
-    /*font-family: "kokonor";
-    font-size: 50px;
-    /*top:50%;
-}*/
-
-
-/*.banner{
-    /*background-color: #303030;
-    border-style: 1px solid white;
-    box-shadow: 10px #888888;
-    /*background-origin: content-box; 
-    /*border-width: 100px;
-}*/
-
-
-/*.profilePic {
-    
-    float: left;
-    width: 30%;
-
-/*    -webkit-transition:width 2s;
-   transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-    /*transition-duration:10s;*
-}
-.profilePic img {
-    border-radius: 125px;
-    transition: all 2s ease-in-out 15s;
-    -moz-transition: all 2s ease-in-out;
-    -webkit-transition:all 2s ease-in-out;
-    cursor:pointer;
-    /*transform: rotate3d(x,y,z,90deg);
-}
-.profilePic img:hover{
-    width: 150px;
-    height: 150px;
-    /*transform:rotate(360deg); 
-}*/
