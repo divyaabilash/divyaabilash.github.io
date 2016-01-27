@@ -1,8 +1,6 @@
 .padding {
     margin: 15px;
-    background:url("images/background.jpg");
-    background-clip: context-box;
-    /*background: black;*/
+    background-color: black;
 }
 
 .navigation{
@@ -124,7 +122,6 @@ a{
 
   /* Scale it nicely to the element */
   background-size: cover;
-   margin-top: 10%;
 
   /* just make it look a bit better ;) */
   &:nth-child(2n) {
@@ -139,7 +136,7 @@ a{
 
  div .bg__objective{
     padding:100px;
-    background-image: url("images/objective.jpg");
+    background-image: url("images/cognizant.jpeg");
     color: White;
   }
 
@@ -159,8 +156,28 @@ a{
   .bg__technical{
     font-family: "chalkboard";
     color: White;
-background-image: url("images/tech.jpg");
-     padding:100px;
+    /*background:url("images/tech.jpg");*/
+    /*background-repeat: no-repeat;*/
+    background-size: 1200px 600px;
+    background-color: #336699;
+       /*Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
+     /*FF3.6+*/
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #336699), color-stop(100%, black));
+     /*Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
+     /*Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
+     /*Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #336699 0%, black 100%);
+     /*IE10+ */
+    background: radial-gradient(ellipse at center, #336699 0%, black 100%);
+     /*W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#336699', endColorstr='black', GradientType=1);
+     /*IE6-9 fallback on horizontal gradient */
+    /*border-radius: 75px;*/
+      margin: 120px 0px;
+    background-origin: content-box;
     padding:20px 0px;
 
   }
@@ -179,20 +196,51 @@ div .bg__technical li{
 
 .bg__experience{
       font-family: "chalkboard";
-      color: black;
-   background-image: url("images/exper.jpg");
-   font-size: 32px;
-   padding:100px;
+    color: black;
+    background:url("images/experience.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   /*background: red; */
+   /*For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #CC9933,#660000 ); 
+   /*For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #CC9933,#660000); 
+   /*For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #CC9933,#660000);
+    /*/*For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #CC9933,#660000 ); 
+   /**Standard syntax */
+     /*IE6-9 fallback on horizontal gradient 
+    /*border-radius: 75px;
+        /*margin: 120px 0px;*/
+    /*background-origin: content-box;*/
+    padding:20px 25px;
+    font-size: 25px;
+    background-repeat: no-repeat;
+ 
 }
 .bg__employement{
-      color: White;
     font-size: 32px;
     font-family: "chalkboard";
-   background-image: url("images/work.jpg");
-   padding:100px;
+    background:url("images/workdesk.jpg");
+    background-repeat: no-repeat;
+   background-origin: content-box;
+   
+        background:#00CCCC;
+    background: -webkit-linear-gradient(left top,#00CCCC , #3366CC );
+        background: -o-linear-gradient(right bottom,#00CCCC , #3366CC );
+            background: -moz-linear-gradient(right bottom,#00CCCC , #3366CC );
+                background: linear-gradient(right bottom,#00CCCC , #3366CC );
+ color: DarkCyan  
+    color:White;
+    z-index: -2;
+    /*opacity: 0.5;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 50px 0px;*/
 }
-
-
 div .bg__employement h1{
     font-family: "Chalkduster";
 }
@@ -220,7 +268,10 @@ div .image div img{
     padding:20%;
     background:#006666;
     background-image:url("images/education.jpg");
-    background-size:  100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+
 }
 .bg__education h1{
     font-size: 40px;
@@ -251,7 +302,6 @@ font-size: 30px;
 .bg__project{
     margin-top:10%;
     color:Black;
-    padding:100px;
     font-size:30px;
     background-image:url("images/project.jpg");
       height: 100vh;
