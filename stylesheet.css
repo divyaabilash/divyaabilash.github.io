@@ -1,7 +1,6 @@
 .padding {
     margin: 15px;
     background:url("images/background.jpg");
-    background-clip: context-box;
     /*background: black;*/
 }
 
