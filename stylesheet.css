@@ -1,16 +1,26 @@
 .padding {
     margin: 15px;
-    background:url("images/background.jpg");
+    /*background:url("images/background.jpg");*/
     /*background: black;*/
+    background: black;
 }
 
-.navigation{
+.navigation {
     list-style: none;
-display: block;
-margin: 0 auto;
-list-style: none;
-
+    margin: 0 auto;
+    list-style: disc;
+    color: white;
+    display: block;
 }
+
+.navigation span {
+    visibility: hidden;
+}
+
+.navigation span:hover {
+    visibility: visible;
+}
+
 
 /*.navigation li{
   margin-top: 9px;
@@ -26,7 +36,6 @@ div::after {
 }
 
 header {
-
     text-align: center;
     padding: 25px 0;
     color: #ddd;
@@ -57,39 +66,39 @@ header h1 {
     font-weight: bold;
 }
 
-.descrition{
+.descrition {
     font-family: "chalkboard";
-    color:white;
+    color: white;
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
 
-.descrition li::after{
+.descrition li::after {
     display: block;
-    content:"...";
-    clear:both;
-    color:  #585858 ;   
+    content: "...";
+    clear: both;
+    color: #585858;
 }
 
- .contacts{
-            padding: 0px;
+.contacts {
+    padding: 0px;
     margin: 0px;
- }
-
-.contacts li{
-    display: inline-block;;
-    list-style: none;
-
 }
 
-a{
+.contacts li {
+    display: inline-block;
+    ;
+    list-style: none;
+}
+
+a {
     color: white;
 }
 
-.contacts li{
-        background:     #707070 ;
-     /* Old browsers */
+.contacts li {
+    background: #707070;
+    /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #000000 100%);
     /* FF3.6+ */
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #585858), color-stop(100%, #000000));
@@ -109,26 +118,25 @@ a{
     background-origin: content-box;
     /*background-attachment: fixed;*/
 }
+
+
 /*parallax implementation */
+
 [class*="bg__"] {
-  height: auto;
-
-  /*text-indent: -9999px;*/
-
-  /* fix background */
-  background-attachment: fixed;
-
-  /* center it */
-  background-position: center center;
-
-  /* Scale it nicely to the element */
-  background-size: cover;
-   margin-top: 10%;
-
-  /* just make it look a bit better ;) */
-  &:nth-child(2n) {
-    box-shadow: inset 0 0 1em #111;
-  }
+    height: auto;
+    /*text-indent: -9999px;*/
+    /* fix background */
+    background-attachment: fixed;
+    /* center it */
+    background-position: center center;
+    /* Scale it nicely to the element */
+    background-size: cover;
+    margin-top: 10%;
+    /* just make it look a bit better ;) */
+    &:nth-child(2n) {
+        box-shadow: inset 0 0 1em #111;
+        color: black;
+    }
 }
 
 .marginDiv {
@@ -136,125 +144,149 @@ a{
     text-decoration: none;
 }
 
- div .bg__objective{
-    padding:100px;
-    background-image: url("images/objective.jpg");
-    color: White;
-  }
+div .bg__objective {
+    padding: 100px;
+    background-color: #ffcb66;
+    /*Old browsers */
+    background-image: -moz-radial-gradient(center, ellipse cover, #ffe5b3 0%, #ffcb66 100%);
+    /*FF3.6+*/
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffe5b3), color-stop(100%, #ffcb66));
+    /*Chrome,Safari4+ */
+    background-image: -webkit-radial-gradient(center, ellipse cover, #ffe5b3 0%, #ffcb66 100%);
+    /*Chrome10+,Safari5.1+ */
+    background-image: -o-radial-gradient(center, ellipse cover, #ffe5b3 0%, #ffcb66 100%);
+    /*Opera 12+ */
+    background-image: -ms-radial-gradient(center, ellipse cover, #ffe5b3 0%, #ffcb66 100%);
+    /*IE10+ */
+    background-image: radial-gradient(ellipse at center, #ffe5b3 0%, #ffcb66 100%);
+    /*W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffe5b3 ', endColorstr=' #ffcb66', GradientType=1);
+    color: black;
+}
 
-  div .bg__objective h1{
+div .bg__objective h1 {
     font-weight: bold;
     font-family: "Braggadocio";
-/*font-family: "ayuthaya";*/
+    /*font-family: "ayuthaya";*/
+}
 
-  }
-
-  div .bg__objective p{
+div .bg__objective p {
     font-family: "chalkboard";
     font-size: 32px;
-    
-  }
+}
 
-  .bg__technical{
+.bg__technical {
     font-family: "chalkboard";
     color: White;
-background-image: url("images/tech.jpg");
-     padding:100px;
-    padding:20px 0px;
+    background-image: url("images/tech.jpg");
+    padding: 100px;
+    padding: 20px 0px;
+}
 
-  }
-div .bg__technical h1{
+div .bg__technical h1 {
     font-family: "Chalkduster";
     font-weight: bold;
 }
 
-div .bg__technical li{
+div .bg__technical li {
     list-style-type: square;
-    margin:25px;
+    margin: 25px;
     font-size: 32px;
     font-weight: bold;
-    z-index:-1;
+    z-index: -1;
 }
 
-.bg__experience{
-      font-family: "chalkboard";
-      color: black;
-   background-image: url("images/exper.jpg");
-   font-size: 32px;
-   padding:100px;
+.bg__experience {
+    font-family: "chalkboard";
+    color: black;
+    background: #ffcb66;
+    background-image: -webkit-linear-gradient(left, #ffcb66, #ffe5b3 );
+    /*For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(right, #ffcb66, #ffe5b3 );
+    /*For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(right, #ffcb66, #ffe5b3 );
+    /*/*For Firefox 3.6 to 15 */
+    background-image: linear-gradient(to right, #ffcb66, #ffe5b3 );
+    font-size: 32px;
+    padding: 100px;
 }
-.bg__employement{
-      color: White;
+
+.bg__employement {
+    color: White;
     font-size: 32px;
     font-family: "chalkboard";
-   background-image: url("images/work.jpg");
-   padding:100px;
+    background-image: url("images/work.jpg");
+    padding: 100px;
 }
 
-
-div .bg__employement h1{
+div .bg__employement h1 {
     font-family: "Chalkduster";
 }
 
-div .bg__employement div::after{
+div .bg__employement div::after {
     margin: 25px;
 }
-.desc{
+
+.desc {
     float: left;
     width: 75%;
 }
-.image{
+
+.image {
     float: right;
-    width:25%;
+    width: 25%;
 }
 
-div .image div img{
+div .image div img {
     border-radius: 100px;
-
 }
 
-.bg__education{
+.bg__education {
     margin-top: 10%;
     color: White;
-    padding:20%;
-    background:#006666;
-    background-image:url("images/education.jpg");
-    background-size:  100% 100%;
+    padding: 20% 10%;
+    background: #006666;
+    background-image: url("images/education.jpg");
+    background-size: 100% 100%;
 }
-.bg__education h1{
+
+.bg__education h1 {
     font-size: 40px;
     font-family: "chalkboard";
 }
 
-.cimage{
+.cimage {
     float: left;
     width: 25%;
-    transform: rotate3d (1,-1,0,60);
+    transform: rotate3d (1, -1, 0, 60);
 }
 
-.cdesc{
+.cdesc {
     margin-top: 60px;
-    float:right;
+    float: right;
     width: 75%;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
 
-.cimage img{
-        border-radius: 150px;
+.cimage img {
+    border-radius: 150px;
 }
 
-
-.bg__project{
-    margin-top:10%;
-    color:Black;
-    padding:100px;
-    font-size:30px;
-    background-image:url("images/project.jpg");
-      height: 100vh;
-   /* background-size: 100% 100%;
+.bg__project {
+    margin-top: 10%;
+    color: Black;
+    padding: 100px;
+    font-size: 30px;
+    background-image: url("images/project.jpg");
+    height: 100vh;
+    /* background-size: 100% 100%;
     padding: 80px;*/
 }
 
+.bg__project div a {
+    float: right;
+    color: black;
+}
