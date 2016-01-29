@@ -400,6 +400,16 @@ div .image div img {
     color: black;
 }
 
+.chat{
+  padding-left: 10px;
+    padding-right: 25px;
+    width: auto;
+    text-decoration: none!important;
+    color: white;
+
+}
+
+
 /*CSS of mailform.html*/
 
 .mailclass{
