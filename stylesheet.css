@@ -13,84 +13,80 @@
     bottom: 0px;
     width: 310px;
     background: #0E0E0E none repeat scroll 0% 0%;
-    list-style: none;
+    list-style-type: none;
+    list-style-image: none;
     margin:  auto;
-    list-style: disc;
+    /*list-style: disc;*/
     color: white;
     display: block;
-    top: 50%;
+    
+}
+.displaystyle{
+    list-style-type: none;
+    margin-top: 50%; 
 }
 
-.navigation ul li a.tooltip {
-    outline: medium none;
+.spacing{
+    margin-bottom: 5%;
 }
-.navigation ul li a.tooltip strong {
-    line-height: 30px;
-}
-.navigation ul li a.tooltip:hover {
-    text-decoration: none;
-}
-.navigation ul li a.tooltip span {
-    display: none;
-    line-height: 16px;
-    margin-left: -160px;
-    margin-top: 60px;
-    padding: 14px 20px;
-    width: 300px;
-    z-index: 10;
-}
-.navigation ul li a.tooltip:hover span {
-    background: #333 url("cssttp/css-tooltip-gradient-bg.png") repeat-x scroll 0 0;
-    border: 2px solid #fff;
-    color: #eee;
-    display: inline;
-    position: absolute;
+.wrap {
+    color: #1496bb;
+  cursor: grab;
+  position: relative;
+  width: 200px;
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
 }
 
-.navigation ul li a.tooltip span {
-    border-radius: 2px;
-    box-shadow: 0 0 8px 4px #666;
-}
-/*.navigation ul li span{
-    display: none;
-}
-
-.navigation ul li:hover + span {
-    display: inline-block;
-}*/
-
- a.tooltip {outline:none; }
-a.tooltip strong {line-height:30px;}
- a.tooltip:hover {text-decoration:none;} 
- a.tooltip span {
-    z-index:10;display:none; padding:14px 20px;
-    margin-top:60px; margin-left:-160px;
-    width:300px; line-height:16px;
-    color: white;
-    display: inline-block;
-}
-a.tooltip:hover span{
-    display:inline-block;
-     position:absolute; 
-    border:2px solid #FFF;  color:#EEE;
-    background:#333 url(cssttp/css-tooltip-gradient-bg.png) repeat-x 0 0;
-}    
-/*CSS3 extras*/
- a .tooltip span
-{
-    border-radius:2px;        
-    box-shadow: 0px 0px 8px 4px #666;
-    display: block;
-    /*opacity: 0.8;*/
+.wrap .tooltip {
+  background: black;
+  bottom: 100%;
+  color: #1496bb;
+  display: block;
+  left: -25px;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 20px;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  left: -100px;
+top: -25px;
 }
 
+.wrap .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}  
 
-/*.navigation li{
-  margin-top: 9px;
-float: left;
-padding-left: 21px;
+.wrap .tooltip:after {
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
 }
-*/
+  
+.wrap:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrap .tooltip {
+  display: none;
+}
+
+.lte8 .wrap:hover .tooltip {
+  display: block;
+}
 
 div::after {
     display: block;
