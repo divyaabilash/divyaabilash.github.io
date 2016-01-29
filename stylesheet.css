@@ -256,12 +256,13 @@ div .bg__objective p {
     color: White;
     background-image: url("images/tech.jpg");
     padding: 100px;
-    padding: 20px 0px;
+    padding: 20px 30px;
 }
 
 div .bg__technical h1 {
-    font-family: "Chalkduster";
+    font-family: "chalkboard";
     font-weight: bold;
+    font-size: 35px;
 }
 
 div .bg__technical li {
@@ -270,6 +271,7 @@ div .bg__technical li {
     font-size: 32px;
     font-weight: bold;
     z-index: -1;
+
 }
 
 .bg__experience {
@@ -394,20 +396,15 @@ div .image div img {
 .bg__project ul {
     list-style: decimal;
 }
+.bg__project ul li{
+    padding:10px;
+}
 
 .bg__project div a {
     float: right;
     color: black;
 }
 
-.chat{
-  padding-left: 10px;
-    padding-right: 25px;
-    width: auto;
-    text-decoration: none!important;
-    color: white;
-
-}
 
 
 /*CSS of mailform.html*/
@@ -468,6 +465,7 @@ p::after{
     text-align: center;
     margin-left : 50px;
     font-size: 15px;
+    font-family: "chalkboard";
 }
 
 .buttons::after{
@@ -475,6 +473,7 @@ p::after{
 }
 
 .buttonreset{
+    font-family: "chalkboard";
   background: #707070;
     /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #4d4d4d 100%);
