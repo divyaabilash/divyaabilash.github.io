@@ -39,7 +39,9 @@
 }
 
 .wrap .tooltip {
-  background: black;
+  /*background: black;*/
+  background-color: transparent;
+  font-weight: bold;
   bottom: 100%;
   color: #1496bb;
   display: block;
@@ -50,8 +52,9 @@
   pointer-events: none;
   position: absolute;
   width: 100%;
-  left: -100px;
-top: -25px;
+  left: -150px;
+  z-index: 1;
+top: -35px;
 }
 
 .wrap .tooltip:before {
@@ -364,6 +367,10 @@ font-size: 30px;
     height: auto;
     /* background-size: 100% 100%;
     padding: 80px;*/
+}
+.bg__project ul{
+list-style: decimal;
+
 }
 
 .bg__project div a {
