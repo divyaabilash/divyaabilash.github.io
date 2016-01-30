@@ -54,8 +54,8 @@
     margin: 15px;
     opacity: 0;
     padding: 30px 15px;
-    pointer-events: none;
-    position: absolute;
+    pointer-events:none;
+    position:absolute;
     width: 100%;
     left: -164px;
     z-index: 1;
@@ -89,7 +89,7 @@
 
 .wrap:hover .tooltip {
     opacity: 1;
-    pointer-events: auto;
+    pointer-events:auto;
     height: 15px;
 }
 
@@ -305,9 +305,6 @@ div .bg__technical li {
     padding: 100px;
 }
 
-div .bg__employement h1 {
-    font-family: "chalkboard";
-}
 
 div .bg__employement div::after {
     margin: 20px;
@@ -343,10 +340,12 @@ div .image div img {
     background-image: linear-gradient(to left, #ffcb66, #ffe5b3);
     background-size: 100% 100%;
 }
-
-.bg__education h1 {
-    font-size: 40px;
+.bg__education h1{
+        font-weight: bold;
     font-family: "chalkboard";
+    font-size: 30px;
+    /*font-family: "ayuthaya";*/
+
 }
 
 .edu {
