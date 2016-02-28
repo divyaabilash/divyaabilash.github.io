@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="jquery-1.12.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Interactive Quiz</h1>
+        <h2>Online Assessment Tool</h2>
+    </header>
+    <div class="progresscontainer hide">
+        <div class="progress" id="timeColor">
+            <span class="bar" id="timeProgress" style="width: 100%;"></span>
+        </div>
+    </div>
+    <div class="main">
+        <section class="intro">
+            <h2>Today`s Pick is <span id="topic"></span>
+         <span id="date" class="date"></span></h2>
+        </section>
+        <div>
+            <p class="startSection">
+                <input type="button" class="btn start" name="start" id="start" value="Start Quiz!"> </p>
+        </div>
+        <div class="hide quizsection" id="quizsection">
+            <section id="scoreSection">
+                <h2>Scores</h2>
+                <div class="scoreBlock">
+                    <span class="right">
+                        <span>Correct: </span>
+                        <span id="right">0</span>
+                    </span>
+                    <span id="time">
+                    </span>
+                    <span class="wrong">
+                        <span>Wrong: </span>
+                         <span id="wrong">0</span>
+                    </span>
+                </div>
+            </section>
+            <div id="questions" class="questions">
+                <div id="question" class="displayquestions">
+                </div>
+                <div class="buttonContainer">
+                    <input type="button" name="start" id="submitAnswer" value="Next Question"  class="buttons"/>
+                    <!-- <input type="button" name="start" id="next" value="Next Question" class="buttons"/> -->
+                    <input type="button" name="quit" id="quit" value="Quit" class="buttons"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>Author: Divya, W01167762 ,Santa Clara University</p>
+        </div>
+    </footer>
+    <script src="questions.js"></script>
+    <script src="cookies.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
