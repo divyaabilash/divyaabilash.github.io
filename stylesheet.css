@@ -114,7 +114,7 @@ header {
     text-align: center;
     padding: 25px 0;
     color: #ddd;
-    background-image: #3d3d3d;
+    background-image : #3d3d3d;
     /* Old browsers */
     background-image: -moz-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
     /* FF3.6+ */
@@ -163,7 +163,6 @@ header h1 {
 
 .contacts li {
     display: inline-block;
-    ;
     list-style: none;
 }
 
@@ -531,3 +530,26 @@ p::after{
 .buttonreset:hover{
     color:red;
 }
+
+/*css for help.html*/
+.helpimg img{
+    max-height: 700px;
+    max-width:1198px; 
+    margin-bottom: 75px;
+}
+
+.helpfont{
+    font-family: "chalkboard";
+    font-size: 30px;
+    color: white;
+}
+.helpfont a{
+    font-family: "chalkboard";
+    font-size: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+
+/* linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+ url("https://i5.walmartimages.com/dfw/d5052290-c/k2-_24e5aebf-95d4-4092-ad13-2faae01f8965.v1.png");*/

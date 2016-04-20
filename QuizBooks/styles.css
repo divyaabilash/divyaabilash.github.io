@@ -266,7 +266,9 @@ footer{
 	.displayquestions p input {
 	    width: 200px;	
 	}
-
+.scoreBlock{
+	    font-size: 12px;
+}
 	.startSection {
 	    margin-top: 60px;
 	    text-align: left;
