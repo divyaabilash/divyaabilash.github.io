@@ -227,6 +227,9 @@ div .bg__gerneric{
     /*W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#26A69A ', endColorstr=' #80CBC4', GradientType=1);
     color: black;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px #E0E0E0;
+    margin-left: 1.5em;
 }
 
 div .bg__gerneric h1{
