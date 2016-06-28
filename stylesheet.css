@@ -1,11 +1,9 @@
 .padding {
     margin: 15px;
     margin-right: 20px;
-    /*background:url("images/background.jpg");*/
-    /*background: black;*/
     background: black;
 }
-
+/*Navigation bar styles*/
 .navigation {
     position: fixed;
     top: 0px;
@@ -16,11 +14,9 @@
     list-style-type: none;
     list-style-image: none;
     margin: auto;
-    /*list-style: disc;*/
     color: white;
     display: block;
 }
-
 .displaystyle {
     list-style-type: none;
     margin-top: 75%;
@@ -54,8 +50,8 @@
     margin: 15px;
     opacity: 0;
     padding: 30px 15px;
-    pointer-events:none;
-    position:absolute;
+    pointer-events: none;
+    position: absolute;
     width: 100%;
     left: -164px;
     z-index: 1;
@@ -89,7 +85,7 @@
 
 .wrap:hover .tooltip {
     opacity: 1;
-    pointer-events:auto;
+    pointer-events: auto;
     height: 15px;
 }
 
@@ -114,7 +110,7 @@ header {
     text-align: center;
     padding: 25px 0;
     color: #ddd;
-    background-image : #3d3d3d;
+    background-image: #3d3d3d;
     /* Old browsers */
     background-image: -moz-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
     /* FF3.6+ */
@@ -164,36 +160,16 @@ header h1 {
 .contacts li {
     display: inline-block;
     list-style: none;
+    letter-spacing: 1.3em;
 }
 
 a {
-    color: white;
+    color: #424242;
 }
 
-.contacts li {
-    background: #707070;
-    /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #000000 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #585858), color-stop(100%, #000000));
-    /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, #585858 0%, #000000 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, #585858 0%, #000000 100%);
-    /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover, #585858 0%, #000000 100%);
-    /* IE10+ */
-    background: radial-gradient(ellipse at center, #585858 0%, #000000 100%);
-    /* W3C */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#000000', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-    border-radius: 75px;
-    margin: 20px;
-    background-origin: content-box;
-    /*background-attachment: fixed;*/
-}
-.contacts li:hover{
+.contacts li:hover {
     background: #006466;
+    color: #F9A825;
     background-image: -webkit-linear-gradient(left, #006466, #00ace6);
     /*For Safari 5.1 to 6.0 */
     background-image: -o-linear-gradient(right, #006466, #00ace6);
@@ -201,13 +177,9 @@ a {
     background-image: -moz-linear-gradient(right, #006466, #00ace6);
     /*/*For Firefox 3.6 to 15 */
     background-image: linear-gradient(to right, #006466, #00ace6);
-    border-radius: 150px;
-    margin: 30px;
-    width: 30px;
-    /*background-origin: content-box;*/
-    /*background-attachment: fixed;*/
+    border-radius: 15px;
+    width: 25px;
 }
-
 
 
 /*parallax implementation */
@@ -215,6 +187,7 @@ a {
 [class*="bg__"] {
     height: auto;
     margin-right: 55px;
+    font-family:"geomanist_regularregular";
     /*text-indent: -9999px;*/
     /* fix background */
     background-attachment: fixed;
@@ -223,11 +196,12 @@ a {
     /* Scale it nicely to the element */
     background-size: cover;
     margin-top: 5%;
-    /* just make it look a bit better ;) */
+       /* just make it look a bit better ;) */
     &:nth-child(2n) {
         box-shadow: inset 0 0 1em #111;
         color: black;
     }
+
 }
 
 .marginDiv {
@@ -235,141 +209,79 @@ a {
     text-decoration: none;
 }
 
-div .bg__objective {
-    padding: 100px;
+div .bg__gerneric{
+    padding: 50px;
     background-color: #ffcb66;
     /*Old browsers */
-    background-image: -moz-radial-gradient(center, ellipse cover, #ffe5b3 0%, #ffcb66 100%);
+    background-image: -moz-radial-gradient(center, ellipse cover, #26A69A 0%, #80CBC4 100%);
     /*FF3.6+*/
-    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffe5b3), color-stop(100%, #ffcb66));
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #80CBC4), color-stop(100%, #26A69A));
     /*Chrome,Safari4+ */
-    background-image: -webkit-radial-gradient(center, ellipse cover, #ffe5b3 0%, #ffcb66 100%);
+    background-image: -webkit-radial-gradient(center, ellipse cover,#26A69A 0%, #80CBC4 100%);
     /*Chrome10+,Safari5.1+ */
-    background-image: -o-radial-gradient(center, ellipse cover, #ffe5b3 0%, #ffcb66 100%);
+    background-image: -o-radial-gradient(center, ellipse cover,#26A69A 0%, #80CBC4 100%);
     /*Opera 12+ */
-    background-image: -ms-radial-gradient(center, ellipse cover, #ffe5b3 0%, #ffcb66 100%);
+    background-image: -ms-radial-gradient(center, ellipse cover, #26A69A 0%, #80CBC4 100%);
     /*IE10+ */
-    background-image: radial-gradient(ellipse at center, #ffe5b3 0%, #ffcb66 100%);
+    background-image: radial-gradient(ellipse at center, #26A69A 0%, #80CBC4 100%);
     /*W3C */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffe5b3 ', endColorstr=' #ffcb66', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#26A69A ', endColorstr=' #80CBC4', GradientType=1);
     color: black;
 }
 
-div .bg__objective h1 {
+div .bg__gerneric h1{
     font-weight: bold;
-    font-family: "Braggadocio";
-    /*font-family: "ayuthaya";*/
+
 }
 
-div .bg__objective p {
-    font-family: "chalkboard";
-    font-size: 32px;
-}
-
-.bg__technical {
-    font-family: "chalkboard";
-    color: White;
-    background-image: url("images/tech.jpg");
-    padding: 100px;
-    padding: 20px 30px;
-}
-
-div .bg__technical h1 {
-    font-family: "chalkboard";
+div .bg__gerneric h6{
     font-weight: bold;
-    font-size: 35px;
+    font-size: 0.75em;
 }
 
-div .bg__technical li {
+div .bg__gerneric p {
+    font-family: "chalkboard";
+    font-size: 22px;
+
+}
+
+div .bg__gerneric li {
+    font-family: "chalkboard";
     list-style-type: square;
     margin: 25px;
-    font-size: 32px;
+    font-size: 01em;
     font-weight: bold;
     z-index: -1;
-
-}
-
-.bg__experience {
-    font-family: "chalkboard";
-    color: black;
-    background: #ffcb66;
-    background-image: -webkit-linear-gradient(left, #ffcb66, #ffe5b3);
-    /*For Safari 5.1 to 6.0 */
-    background-image: -o-linear-gradient(right, #ffcb66, #ffe5b3);
-    /*For Opera 11.1 to 12.0 */
-    background-image: -moz-linear-gradient(right, #ffcb66, #ffe5b3);
-    /*/*For Firefox 3.6 to 15 */
-    background-image: linear-gradient(to right, #ffcb66, #ffe5b3);
-    font-size: 32px;
-    padding: 100px;
-}
-
-.bg__employement {
-    color: White;
-    font-size: 32px;
-    font-family: "chalkboard";
-    /*background-image: url("images/work.jpg");*/
-    background: #006466;
-    background-image: -webkit-linear-gradient(left, #006466, #00ace6);
-    /*For Safari 5.1 to 6.0 */
-    background-image: -o-linear-gradient(right, #006466, #00ace6);
-    /*For Opera 11.1 to 12.0 */
-    background-image: -moz-linear-gradient(right, #006466, #00ace6);
-    /*/*For Firefox 3.6 to 15 */
-    background-image: linear-gradient(to right, #006466, #00ace6);
-    padding: 100px;
-}
-
-
-div .bg__employement div::after {
-    margin: 20px;
+    font-weight: bold;
 }
 
 .desc {
     float: left;
     width: 75%;
+    font-family: "chalkboard";
 }
+
 .image {
     float: right;
     width: 25%;
 }
+
 div .image div img {
     border-radius: 100px;
     overflow: hidden;
     transition-duration: 0.8s;
     transition-property: transform;
 }
+
 div .image div img:hover {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
 
-.bg__education {
-    margin-top: 10%;
-    color: black;
-    padding: 10%;
-    background: #006666;
-    /*background-image: url("images/education.jpg");*/
-    background: #ffcb66;
-    background-image: -webkit-linear-gradient(right, #ffcb66, #ffe5b3);
-    /*For Safari 5.1 to 6.0 */
-    background-image: -o-linear-gradient(left, #ffcb66, #ffe5b3);
-    /*For Opera 11.1 to 12.0 */
-    background-image: -moz-linear-gradient(left, #ffcb66, #ffe5b3);
-    /*/*For Firefox 3.6 to 15 */
-    background-image: linear-gradient(to left, #ffcb66, #ffe5b3);
-    background-size: 100% 100%;
-}
-.bg__education h1{
-        font-weight: bold;
-    font-family: "chalkboard";
-    font-size: 30px;
-    /*font-family: "ayuthaya";*/
-
-}
 
 .edu {
     margin-bottom: 20px;
+        font-family: "chalkboard";
 }
 
 .cimage {
@@ -383,81 +295,54 @@ div .image div img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 1em;
     margin-left: 25px;
     min-height: 150px;
+
 }
 
 .cimage img {
     border-radius: 150px;
     width: 150px;
-        transition-duration: 0.8s;
+    transition-duration: 0.8s;
     transition-property: transform;
-
 }
-.cimage img:hover{
+
+.cimage img:hover {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
-}
-
-.bg__project {
-    margin-top: 10%;
-    color: Black;
-    padding: 100px;
-    font-size: 30px;
-    /*background-image: url("images/work.jpg");*/
-    background: #006466;
-    background-image: -webkit-linear-gradient(left, #006466, #00ace6);
-    /*For Safari 5.1 to 6.0 */
-    background-image: -o-linear-gradient(right, #006466, #00ace6);
-    /*For Opera 11.1 to 12.0 */
-    background-image: -moz-linear-gradient(right, #006466, #00ace6);
-    /*/*For Firefox 3.6 to 15 */
-    background-image: linear-gradient(to right, #006466, #00ace6);
-    height: auto;
-    /* background-size: 100% 100%;
-    padding: 80px;*/
-}
-
-.bg__project ul {
-    list-style: decimal;
-}
-.bg__project ul li{
-    padding:10px;
-}
-
-.bg__project div a {
-    float: right;
-    color: black;
 }
 
 
 
 /*CSS of mailform.html*/
 
-.mailclass{
+.mailclass {
     color: white;
     text-align: center;
     font-family: "chalkboard";
     font-size: 20px;
-/*    border-color: solid white;
+    /*    border-color: solid white;
     border-radius: 10px;*/
 }
-p::after{
+
+p::after {
     margin-bottom: 25px;
 }
-.txtstyle{
+
+.txtstyle {
     width: 300px;
     height: 30px;
     border-radius: 5px;
     padding: 0px 5px;
 }
-.labelmsg{
+
+.labelmsg {
     margin-left: -350px;
     text-align: left;
 }
 
-.textar{
+.textar {
     margin-left: 75px;
     margin-bottom: 50px;
     width: 300px;
@@ -465,8 +350,9 @@ p::after{
     border-radius: 5px;
     padding: 10px 5px;
 }
-.buttons{
-     background: #707070;
+
+.buttons {
+    background: #707070;
     /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #bfbfbf 0%, #8c8c8c 100%);
     /* FF3.6+ */
@@ -482,25 +368,24 @@ p::after{
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#bfbfbf', endColorstr='#8c8c8c', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
-
     border-radius: 15px;
     width: 100px;
     height: 50px;
     color: white;
     font-weight: bold;
     text-align: center;
-    margin-left : 50px;
+    margin-left: 50px;
     font-size: 15px;
     font-family: "chalkboard";
 }
 
-.buttons::after{
-    margin:150px;
+.buttons::after {
+    margin: 150px;
 }
 
-.buttonreset{
+.buttonreset {
     font-family: "chalkboard";
-  background: #707070;
+    background: #707070;
     /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #4d4d4d 100%);
     /* FF3.6+ */
@@ -516,34 +401,36 @@ p::after{
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#4d4d4d', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
-
     border-radius: 15px;
     width: 100px;
     height: 50px;
     color: white;
     font-weight: bold;
     text-align: center;
-    margin-left : 50px;
-     font-size: 15px;
+    margin-left: 50px;
+    font-size: 15px;
 }
 
-.buttonreset:hover{
-    color:red;
+.buttonreset:hover {
+    color: red;
 }
+
 
 /*css for help.html*/
-.helpimg img{
+
+.helpimg img {
     max-height: 700px;
-    max-width:1198px; 
+    max-width: 1198px;
     margin-bottom: 75px;
 }
 
-.helpfont{
+.helpfont {
     font-family: "chalkboard";
     font-size: 30px;
     color: white;
 }
-.helpfont a{
+
+.helpfont a {
     font-family: "chalkboard";
     font-size: 50px;
     color: white;
@@ -551,5 +438,34 @@ p::after{
 }
 
 
-/* linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
- url("https://i5.walmartimages.com/dfw/d5052290-c/k2-_24e5aebf-95d4-4092-ad13-2faae01f8965.v1.png");*/
+/*resume button style and meet up design*/
+
+.resumebutton {
+    background-color: #26A69A;
+    color: white;
+    font: 1.3rem "geomanist_regularregular";
+    letter-spacing: 0.2em;
+    padding: 5px 15px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.generic {
+    background-color: #26A69A;
+    color: #424242;
+    font: 1.3rem "geomanist_regularregular";
+    letter-spacing: 0.2em;
+    padding: 0.5em 5em;
+    width: 100%;
+    border-style: none;
+    align-items: center;
+
+}
+.highlite{
+    color:#ECEFF1;
+}
+footer {
+    color: black;
+    font: 0.7em "geomanist_regularregular";
+    background-color: #26A69A;
+}
