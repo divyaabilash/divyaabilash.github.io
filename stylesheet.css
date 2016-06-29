@@ -246,6 +246,10 @@ div .bg__gerneric li {
     /*font-weight: bold;*/
 }
 
+div .bg__gerneric a:hover {
+    color: #26A69A;
+}
+
 /*.desc {
     float: left;
     width: 75%;
