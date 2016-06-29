@@ -475,7 +475,7 @@ footer {
 
 .timeline {
     margin: 0px auto;
-    max-width: 40em;
+    max-width: 45em;
     overflow: hidden;
     height: auto;
     position: relative;
@@ -509,7 +509,7 @@ footer {
     -ms-transition: background .15s linear;
     -o-transition: background .15s linear;
     transition: background .15s linear;
-    /*border-left: 10px solid black;*/
+        /*border-left: 10px solid black;*/
 }
 
 .timeline .event:hover {
