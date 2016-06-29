@@ -1,7 +1,14 @@
-.padding {
-    margin: 15px;
-    margin-right: 20px;
-    background: black;
+body{
+/*    margin: 15px;
+    margin-right: 20px;*/
+    background: white;
+    padding:0px;
+    margin:0px;
+    font: 1em "Source Sans Pro", Consolas, "Trebuchet Ms";
+    font-weight: 300;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 /*Navigation bar styles*/
 .navigation {
@@ -28,7 +35,7 @@
 
 .wrap {
     top: 50%;
-    color: #1496bb;
+    color: #26A69A;
     cursor: grab;
     position: relative;
     width: 200px;
@@ -41,10 +48,10 @@
 .wrap .tooltip {
     /*background: black;*/
     text-align: center;
-    background-color: #1496bb;
+    background-color: #26A69A;
     font-weight: bold;
     bottom: 100%;
-    color: black;
+    color: #E0E0E0;
     display: block;
     left: -10px;
     margin: 15px;
@@ -57,6 +64,7 @@
     z-index: 1;
     top: -39px;
     width: 104px;
+    letter-spacing: 0.1em;
 }
 
 .wrap .tooltip:before {
@@ -72,7 +80,7 @@
 .wrap .tooltip:after {
     border-bottom: solid transparent 10px;
     border-top: solid transparent 10px;
-    border-left: solid #1496bb 20px;
+    border-left: solid #26A69A 20px;
     left: -10px;
     content: " ";
     height: 0;
@@ -108,8 +116,9 @@ div::after {
 
 header {
     text-align: center;
-    padding: 25px 0;
+    padding: 25px 5px;
     color: #ddd;
+    width: 100%;
     background-image: #3d3d3d;
     /* Old browsers */
     background-image: -moz-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
@@ -127,6 +136,8 @@ header {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#000000', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
     /*background-attachment: fixed;*/
+    overflow: hidden;
+    top:0px;
 }
 
 header h1 {
@@ -167,27 +178,12 @@ a {
     color: #424242;
 }
 
-.contacts li:hover {
-    background: #006466;
-    color: #F9A825;
-    background-image: -webkit-linear-gradient(left, #006466, #00ace6);
-    /*For Safari 5.1 to 6.0 */
-    background-image: -o-linear-gradient(right, #006466, #00ace6);
-    /*For Opera 11.1 to 12.0 */
-    background-image: -moz-linear-gradient(right, #006466, #00ace6);
-    /*/*For Firefox 3.6 to 15 */
-    background-image: linear-gradient(to right, #006466, #00ace6);
-    border-radius: 15px;
-    width: 25px;
-}
-
-
 /*parallax implementation */
 
 [class*="bg__"] {
     height: auto;
     margin-right: 55px;
-    font-family:"geomanist_regularregular";
+    /*font-family:"geomanist_regularregular";*/
     /*text-indent: -9999px;*/
     /* fix background */
     background-attachment: fixed;
@@ -210,26 +206,10 @@ a {
 }
 
 div .bg__gerneric{
-    padding: 50px;
-    background-color: #ffcb66;
-    /*Old browsers */
-    background-image: -moz-radial-gradient(center, ellipse cover, #26A69A 0%, #80CBC4 100%);
-    /*FF3.6+*/
-    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #80CBC4), color-stop(100%, #26A69A));
-    /*Chrome,Safari4+ */
-    background-image: -webkit-radial-gradient(center, ellipse cover,#26A69A 0%, #80CBC4 100%);
-    /*Chrome10+,Safari5.1+ */
-    background-image: -o-radial-gradient(center, ellipse cover,#26A69A 0%, #80CBC4 100%);
-    /*Opera 12+ */
-    background-image: -ms-radial-gradient(center, ellipse cover, #26A69A 0%, #80CBC4 100%);
-    /*IE10+ */
-    background-image: radial-gradient(ellipse at center, #26A69A 0%, #80CBC4 100%);
-    /*W3C */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#26A69A ', endColorstr=' #80CBC4', GradientType=1);
-    color: black;
-    border-radius: 50px;
-    box-shadow: 10px 10px 5px #E0E0E0;
-    margin-left: 1.5em;
+    padding: 5px 5px;
+    background-color: white;
+    color: #26A69A;
+    margin: 5em;
 }
 
 div .bg__gerneric h1{
@@ -242,20 +222,20 @@ div .bg__gerneric h6{
     font-size: 0.75em;
 }
 
-div .bg__gerneric p {
+/*div .bg__gerneric p {
     font-family: "chalkboard";
     font-size: 22px;
 
-}
+}*/
 
 div .bg__gerneric li {
-    font-family: "chalkboard";
+    /*font-family: "chalkboard";*/
     list-style-type: square;
     margin: 25px;
     font-size: 01em;
-    font-weight: bold;
+    /*font-weight: bold;*/
     z-index: -1;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .desc {
@@ -284,7 +264,7 @@ div .image div img:hover {
 
 .edu {
     margin-bottom: 20px;
-        font-family: "chalkboard";
+        /*font-family: "chalkboard";*/
 }
 
 .cimage {
@@ -323,7 +303,7 @@ div .image div img:hover {
 .mailclass {
     color: white;
     text-align: center;
-    font-family: "chalkboard";
+    /*font-family: "chalkboard";*/
     font-size: 20px;
     /*    border-color: solid white;
     border-radius: 10px;*/
@@ -379,7 +359,7 @@ p::after {
     text-align: center;
     margin-left: 50px;
     font-size: 15px;
-    font-family: "chalkboard";
+    /*font-family: "chalkboard";*/
 }
 
 .buttons::after {
@@ -387,7 +367,7 @@ p::after {
 }
 
 .buttonreset {
-    font-family: "chalkboard";
+    /*font-family: "chalkboard";*/
     background: #707070;
     /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #4d4d4d 100%);
@@ -428,13 +408,13 @@ p::after {
 }
 
 .helpfont {
-    font-family: "chalkboard";
+    /*font-family: "chalkboard";*/
     font-size: 30px;
     color: white;
 }
 
 .helpfont a {
-    font-family: "chalkboard";
+    /*font-family: "chalkboard";*/
     font-size: 50px;
     color: white;
     margin-bottom: 50px;
@@ -456,7 +436,7 @@ p::after {
 .generic {
     background-color: #26A69A;
     color: #424242;
-    font: 1.3rem "geomanist_regularregular";
+    font: 1.5em "geomanist_regularregular";
     letter-spacing: 0.2em;
     padding: 0.5em 5em;
     width: 100%;
@@ -465,7 +445,7 @@ p::after {
 
 }
 .highlite{
-    color:#ECEFF1;
+    color:#FFB300;
 }
 footer {
     color: black;
