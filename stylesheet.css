@@ -1,16 +1,17 @@
-body{
-/*    margin: 15px;
-    margin-right: 20px;*/
+body {
     background: white;
-    padding:0px;
-    margin:0px;
+    padding: 0px;
+    margin: 0px;
     font: 1em "Source Sans Pro", Consolas, "Trebuchet Ms";
     font-weight: 300;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
 /*Navigation bar styles*/
+
 .navigation {
     position: fixed;
     top: 0px;
@@ -24,6 +25,7 @@ body{
     color: white;
     display: block;
 }
+
 .displaystyle {
     list-style-type: none;
     margin-top: 75%;
@@ -137,7 +139,7 @@ header {
     /* IE6-9 fallback on horizontal gradient */
     /*background-attachment: fixed;*/
     overflow: hidden;
-    top:0px;
+    top: 0px;
 }
 
 header h1 {
@@ -178,6 +180,7 @@ a {
     color: #424242;
 }
 
+
 /*parallax implementation */
 
 [class*="bg__"] {
@@ -192,12 +195,11 @@ a {
     /* Scale it nicely to the element */
     background-size: cover;
     margin-top: 5%;
-       /* just make it look a bit better ;) */
+    /* just make it look a bit better ;) */
     &:nth-child(2n) {
         box-shadow: inset 0 0 1em #111;
         color: black;
     }
-
 }
 
 .marginDiv {
@@ -205,21 +207,27 @@ a {
     text-decoration: none;
 }
 
-div .bg__gerneric{
+div .bg__gerneric {
     padding: 5px 5px;
     background-color: white;
-    color: #26A69A;
+    color: #424242;
     margin: 5em;
 }
 
-div .bg__gerneric h1{
+div .bg__gerneric h1 {
     font-weight: bold;
-
+    color: #212121;
 }
 
-div .bg__gerneric h6{
+div .bg__gerneric h6 {
     font-weight: bold;
     font-size: 0.75em;
+    color: #212121;
+}
+
+div .bg__gerneric h3 {
+    font-weight: bold;
+    color: #212121;
 }
 
 /*div .bg__gerneric p {
@@ -238,7 +246,7 @@ div .bg__gerneric li {
     /*font-weight: bold;*/
 }
 
-.desc {
+/*.desc {
     float: left;
     width: 75%;
     font-family: "chalkboard";
@@ -248,8 +256,8 @@ div .bg__gerneric li {
     float: right;
     width: 25%;
 }
-
-div .image div img {
+*/
+/*div .image div img {
     border-radius: 100px;
     overflow: hidden;
     transition-duration: 0.8s;
@@ -261,10 +269,9 @@ div .image div img:hover {
     -webkit-transform: rotate(360deg);
 }
 
-
 .edu {
     margin-bottom: 20px;
-        /*font-family: "chalkboard";*/
+    /*font-family: "chalkboard";
 }
 
 .cimage {
@@ -281,7 +288,6 @@ div .image div img:hover {
     font-size: 1em;
     margin-left: 25px;
     min-height: 150px;
-
 }
 
 .cimage img {
@@ -296,8 +302,7 @@ div .image div img:hover {
     -webkit-transform: rotate(360deg);
 }
 
-
-
+*/
 /*CSS of mailform.html*/
 
 .mailclass {
@@ -442,13 +447,80 @@ p::after {
     width: 100%;
     border-style: none;
     align-items: center;
+}
 
+.highlite {
+    color: #FF8F00;
 }
-.highlite{
-    color:#FFB300;
-}
+
 footer {
     color: black;
     font: 0.7em "geomanist_regularregular";
     background-color: #26A69A;
+}
+
+
+/*time line css added on june 29*/
+
+
+/**, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+
+.timeline {
+    margin: 0px auto;
+    max-width: 40em;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    padding: 0px;
+    list-style-type: none;
+    background: url("images/line.svg.png");
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+    background-size: contain;
+    font: 1em "Source Sans Pro", Consolas, "Trebuchet Ms";
+}
+
+.timeline .event {
+    position: relative;
+    text-align: center;
+    float: right;
+    clear: right;
+    width: 45%;
+    margin: 1em 1.5%;
+    border-radius: 5px;
+    list-style-type: none;
+    display: block;
+    padding: .4em;
+    background: white;
+    z-index: 15;
+    color:#212121;
+    border: 1px solid #9d9d9d;
+    text-decoration: none;
+    -webkit-transition: background .15s linear;
+    -moz-transition: background .15s linear;
+    -ms-transition: background .15s linear;
+    -o-transition: background .15s linear;
+    transition: background .15s linear;
+    /*border-left: 10px solid black;*/
+}
+
+.timeline .event:hover {
+    background: #F0F4C3;
+    color: #004D40;
+}
+
+.timeline .event:hover:after {
+    background: #505050;
+    color:#212121;
+}
+
+.timeline .event:nth-of-type(2n) {
+    float: left;
+    clear: left;
+    /*  border-right: 10px solid black;
+  border-left:1px solid #9d9d9d;*/
 }
