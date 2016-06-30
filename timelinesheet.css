@@ -55,3 +55,53 @@
 /*  border-right: 10px solid black;
   border-left:1px solid #9d9d9d;*/
 }
+
+.pointer{
+  width: 1em;
+  height: 1em;
+
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+  .timeline{
+  margin: 0px auto;
+  max-width: 40em;
+  height: auto;
+  position: relative;
+  padding: 0px;
+  list-style-type: none;
+  font: 1em "Source Sans Pro", Consolas, "Trebuchet Ms";
+  background: none;
+}
+
+.timeline .event {
+  position: relative;
+  text-align: center;
+  clear:both;
+/*  float: right;
+  clear: right;*/
+  width: 94%;
+  margin: 1em 1.5%;
+  border-radius: 5px;
+  list-style-type: none;
+  display: block;
+  padding: .4em;
+  background: white;
+  z-index: 15;
+  color: #424242;
+  border: 1px solid #9d9d9d;
+  text-decoration: none;
+  -webkit-transition: background .15s linear;
+  -moz-transition: background .15s linear;
+  -ms-transition: background .15s linear;
+  -o-transition: background .15s linear;
+  transition: background .15s linear;
+  /*border-left: 10px solid black;*/
+}
+
+
+}

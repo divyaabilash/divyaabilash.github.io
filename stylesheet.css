@@ -1,7 +1,7 @@
 body {
     background: white;
-    padding: 0px;
-    margin: 0px;
+    padding: 0%;
+    margin: 0%;
     font: 1em "Source Sans Pro", Consolas, "Trebuchet Ms";
     font-weight: 300;
     -webkit-box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 
 .navigation {
     position: fixed;
-    top: 0px;
+    top: 0%;
     right: -230px;
     bottom: 0px;
     width: 310px;
@@ -120,7 +120,6 @@ header {
     text-align: center;
     padding: 25px 5px;
     color: #ddd;
-    width: 100%;
     background-image: #3d3d3d;
     /* Old browsers */
     background-image: -moz-radial-gradient(center, ellipse cover, #3d3d3d 0%, #000000 100%);
@@ -139,7 +138,6 @@ header {
     /* IE6-9 fallback on horizontal gradient */
     /*background-attachment: fixed;*/
     overflow: hidden;
-    top: 0px;
 }
 
 header h1 {
@@ -154,8 +152,8 @@ header h1 {
     font-family: "chalkboard";
     color: white;
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0%;
+    margin: 0%;
 }
 
 .descrition li::after {
@@ -173,7 +171,6 @@ header h1 {
 .contacts li {
     display: inline-block;
     list-style: none;
-    letter-spacing: 1.3em;
 }
 
 a {
@@ -185,7 +182,7 @@ a {
 
 [class*="bg__"] {
     height: auto;
-    margin-right: 55px;
+    margin-right: 55%;
     /*font-family:"geomanist_regularregular";*/
     /*text-indent: -9999px;*/
     /* fix background */
@@ -203,15 +200,13 @@ a {
 }
 
 .marginDiv {
-    margin: 20px;
     text-decoration: none;
 }
 
 div .bg__gerneric {
-    padding: 5px 5px;
     background-color: white;
     color: #424242;
-    margin: 5em;
+    margin: 5%;
 }
 
 div .bg__gerneric h1 {
@@ -239,7 +234,7 @@ div .bg__gerneric h3 {
 div .bg__gerneric li {
     /*font-family: "chalkboard";*/
     list-style-type: square;
-    margin: 25px;
+    margin: 15px 0;
     font-size: 01em;
     /*font-weight: bold;*/
     z-index: -1;
@@ -445,12 +440,11 @@ p::after {
 .generic {
     background-color: #26A69A;
     color: #424242;
-    font: 1.5em "geomanist_regularregular";
-    letter-spacing: 0.2em;
-    padding: 0.5em 5em;
-    width: 100%;
+    letter-spacing: 10px;
+    padding: 10px;
     border-style: none;
     align-items: center;
+    float: right;
 }
 
 .highlite {
@@ -458,9 +452,16 @@ p::after {
 }
 
 footer {
-    color: black;
-    font: 0.7em "geomanist_regularregular";
+    height: 40px;
     background-color: #26A69A;
+}
+
+footer p {
+    color: black;
+    padding-left: 5px;
+    font: 11px "geomanist_regularregular";
+    background-color: #26A69A;
+    float:left;
 }
 
 
@@ -527,4 +528,57 @@ footer {
     clear: left;
     /*  border-right: 10px solid black;
   border-left:1px solid #9d9d9d;*/
+}
+/*Responsive designing */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+[class*="bg__"] {
+    margin:0%;
+}
+  .timeline{
+  margin: 0px auto;
+  max-width: 40em;
+  height: auto;
+  position: relative;
+  padding: 0px;
+  list-style-type: none;
+  font: 1em "Source Sans Pro", Consolas, "Trebuchet Ms";
+  background: none;
+}
+
+.timeline .event {
+  position: relative;
+  text-align: center;
+  clear:both;
+/*  float: right;
+  clear: right;*/
+  width: 94%;
+  margin: 1em 1.5%;
+  border-radius: 5px;
+  list-style-type: none;
+  display: block;
+  padding: .4em;
+  background: white;
+  z-index: 15;
+  color: #424242;
+  border: 1px solid #9d9d9d;
+  text-decoration: none;
+  -webkit-transition: background .15s linear;
+  -moz-transition: background .15s linear;
+  -ms-transition: background .15s linear;
+  -o-transition: background .15s linear;
+  transition: background .15s linear;
+  /*border-left: 10px solid black;*/
+}
+
+footer{
+    height: 76px;
+}
+.generic {
+    background-color: #26A69A;
+    color: #424242;
+    letter-spacing: 10px;
+    padding: 10px 100px;
+    border-style: none;
+    align-items: center;
+}
 }
