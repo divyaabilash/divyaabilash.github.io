@@ -148,7 +148,7 @@ header h1 {
     font-weight: bold;
 }
 
-.descrition {
+.description {
     font-family: "chalkboard";
     color: white;
     list-style: none;
@@ -156,7 +156,7 @@ header h1 {
     margin: 0%;
 }
 
-.descrition li::after {
+.description li::after {
     display: block;
     content: "...";
     clear: both;
